@@ -1,0 +1,98 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body {
+    background-color: #05ee56;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    width: 80vw;
+    height: 80vh;
+    text-align: center;
+    padding: 0.8rem;
+    border-radius: 18px;
+}
+
+.container h1 {
+    font-size: 1.8rem;
+}
+
+.dashboard {
+    background-color: #036e47c4;
+    width: 80%;
+    height: 40%;
+    border-radius: 7px;
+    margin: 20px auto;
+}
+
+.slabs {
+    display: flex;
+    justify-content: space-around;
+}
+
+.slab {
+    width: 40%;
+    height: 20%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 0 9px;
+}
+
+.income {
+    color: #05ee56;
+}
+
+.expense {
+    color: red;
+}
+
+.transactions {
+    display: flex;
+    gap: 5%;
+    justify-content: space-around;
+}
+
+.transactions>* {
+
+    width: 50%;
+    border-radius: 1rem;
+    padding: 9px;
+
+}
+
+
+.transaction_history {
+    background-color: #a44343;
+    text-align: left;
+    /* width: 50%;
+    border-radius: 1rem;
+    padding: 9px; */
+}
+
+.transaction_form {
+    background-color: aqua;
+}
+
+
+@media (max-width:965px) {
+    .container {
+        overflow-wrap: break-word;
+        height: 80%;
+    }
+
+    .dashboard {
+        padding: 2rem;
+    }
+}
