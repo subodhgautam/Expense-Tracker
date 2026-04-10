@@ -11,18 +11,20 @@
 <body>
     <div class="container">
         <h1>Expense Tracker</h1>
+
+
         <div class="dashboard">
-            <p>Your Balance</p>
-            <h2 id="balance">$sgdfsggsfsfgfgfgfgfgfg</h2>
-<!-- 9840110440 -->
+            <h2>Your Balance</h2>
+            <h1 id="balance">$sgdfsggsfsfgfgfgfgfgfg</h1>
+            <!-- 9840110440 -->
             <div class="slabs">
                 <div class="income slab">
                     <h3>Income</h3>
-                    <p id="income_val" >$ddd</p>
+                    <p id="income_val">$ddd</p>
                 </div>
                 <div class="expense slab">
                     <h3>Expense</h3>
-                    <p id="expense_val" >$sssss</p>
+                    <p id="expense_val">$sssss</p>
                 </div>
             </div>
         </div>
@@ -30,41 +32,41 @@
         <div class="transactions">
 
             <div class="transaction_history">
-                <h3>Transactions</h3>
-                <!--  -->
+                <h2>Transactions</h2>
                 <div class="cards">
-                    <div class="card">
-                        <p>Paycheck</p>
+                    <ul id="transaction_list">
+                        <!--  yesma halni -->
 
-                    </div>
+
+                    </ul>
+                    
+                    <button id="Reset">Reset</button>
                 </div>
             </div>
-            
-            
-            
-            <div class="transaction_form">
-                <h3>Add Transactions</h3>
-                <form action="">
-                    
-                    <div class="div">
-                        <label for="desription">Description</label>
-                        <input type="text" name="desription" id="description"
-                        placeholder="Enter the description for transaction">
-                    </div>
-                    
-                    <div class="div">
-                        <label for="amount">Amount</label>
-                        <input type="number" name="amount" id="amount" placeholder="Enter the amount">
-                    </div>
-                    
-                    <button type="submit" id="add_btn">Add Transaction</button>
-                    
-                </div>
 
-            </form>
+
+
+            <div class="add_transactions">
+                <h2>Add Transactions</h2>
+
+                    <form id="transaction_form">
+                        <div class="div">
+                            <label for="desription">Description</label>
+                            <input type="text" name="desription" id="description"
+                                placeholder="Enter the description for transaction" required>
+                        </div>
+
+                        <div class="div">
+                            <label for="amount">Amount</label>
+                            <input type="number" name="amount" id="amount" placeholder="Enter the amount" required>
+                            <small>Use (-) negative for expenses.</small>
+                        </div>
+
+                        <button type="submit" id="add_btn">Add Transaction</button>
+                    </form>
+            </div>
+
         </div>
-
-
 
 
     </div>

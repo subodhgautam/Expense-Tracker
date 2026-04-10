@@ -38,29 +38,22 @@ function addTransaction(e) {
 
 function updateTransactionList() {
     transaction_list.innerHTML = ""
-    let sol_transactions = [...transactions].reverse()
+    transactions.reverse()
     // let array = JSON.parse(localStorage.getItem("transactions"))
-    sol_transactions.forEach((transaction_obj) => {
+    transactions.forEach((transaction_obj) => {
         const el = generateTransactionitem(transaction_obj)
         transaction_list.appendChild(el)
     })
-    income_amount = 0;
-    expense_amount = 0;
-    total_balance = 0;
+
     transactions.forEach(transaction_obj => {
-
         const amt = transaction_obj.amount
-
-
         if (amt) {
             total_balance += amt
-            console.log("total", total_balance);
-
             if (amt > 0) {
                 income_amount += amt
             }
             else {
-                expense_amount += amt
+                expense_val += amt
             }
         }
     });
@@ -118,14 +111,11 @@ function updateDashboard() {
 
 updateDashboard()
 
-
-
-
 document.getElementById("Reset").addEventListener("click", () => {
     total_balance = 0
     income_amount = 0
     expense_amount = 0
-    transaction_list.innerHTML = ""
+    transaction_list.innerHTML =""
     updateDashboard()
     localStorage.clear();
 })
