@@ -1,6 +1,6 @@
 # Simple Expense Tracker
 
-A basic web application to help you track your expenses. Built using **HTML**, **CSS**, and **JavaScript**, this app allows users to add, view, and remove expenses, giving them a simple way to keep track of their spending.
+A basic web application to help you track your expenses. Built using **HTML**, **CSS**, and **JavaScript**, this app allows users to add, view, and remove expenses, giving them a simple way to keep track of their spending. It saves your transaction by using local storage.
 I have included test files in this repo for looking into my though process.
 
 ## Features
@@ -11,6 +11,7 @@ I have included test files in this repo for looking into my though process.
 - Reset everything with a button 
 - Simple and intuitive UI design.
 - Beautiful animation.
+-Uses Local Storage
 
 ## Tech Stack
 
